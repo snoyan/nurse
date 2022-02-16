@@ -61,7 +61,7 @@ class Network {
       Advertising.stateNurses = WelcomeScreen.nurseList;
   }
 
-//////////////get rates//////////////////////
+//////////////////////get rates////////////////////////////
   Future<List<Rate>> getRate() async {
     var list = await netGet(e_get_rate);
     int t = 0;
@@ -98,7 +98,7 @@ class Network {
 
     return rates;
   }
-  //////////////////////// login request/////////////////////////
+  //////////////////////// login request//////////////////////////
 
   loginToken(String username, String password) async {
     /* Map data = {
